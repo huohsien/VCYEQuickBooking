@@ -13,6 +13,7 @@
 		66A6B5FC25C1349400D83B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A6B5FA25C1349400D83B35 /* Main.storyboard */; };
 		66A6B5FE25C1349500D83B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A6B5FD25C1349500D83B35 /* Assets.xcassets */; };
 		66A6B60125C1349500D83B35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A6B5FF25C1349500D83B35 /* LaunchScreen.storyboard */; };
+		66A6B60A25C1355800D83B35 /* VCRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6B60925C1355800D83B35 /* VCRoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		66A6B5FD25C1349500D83B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66A6B60025C1349500D83B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66A6B60225C1349500D83B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66A6B60925C1355800D83B35 /* VCRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,17 @@
 				66A6B5FD25C1349500D83B35 /* Assets.xcassets */,
 				66A6B5FF25C1349500D83B35 /* LaunchScreen.storyboard */,
 				66A6B60225C1349500D83B35 /* Info.plist */,
+				66A6B60C25C1360300D83B35 /* Custom UIs */,
 			);
 			path = VCYEQuickBooking;
+			sourceTree = "<group>";
+		};
+		66A6B60C25C1360300D83B35 /* Custom UIs */ = {
+			isa = PBXGroup;
+			children = (
+				66A6B60925C1355800D83B35 /* VCRoundButton.swift */,
+			);
+			path = "Custom UIs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 				66A6B5F925C1349400D83B35 /* ViewController.swift in Sources */,
 				66A6B5F525C1349400D83B35 /* AppDelegate.swift in Sources */,
 				66A6B5F725C1349400D83B35 /* SceneDelegate.swift in Sources */,
+				66A6B60A25C1355800D83B35 /* VCRoundButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
