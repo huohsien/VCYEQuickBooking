@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,31 +16,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11H-XN-k4t" customClass="VCRoundButton" customModule="VCYEQuickBooking" customModuleProvider="target">
-                                <rect key="frame" x="135" y="44" width="120" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3T-u5-R6u" customClass="VCRoundButton" customModule="VCYEQuickBooking" customModuleProvider="target">
+                                <rect key="frame" x="10.000000000000007" y="692" width="116.66666666666669" height="118"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="NKR-L4-aSS"/>
-                                    <constraint firstAttribute="width" constant="120" id="aIT-sH-tHt"/>
-                                </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="&lt;">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="button1Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n2T-bk-4XR"/>
+                                    <action selector="buttonLeftClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z29-Ja-6tq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEI-0h-4Gd" customClass="VCRoundButton" customModule="VCYEQuickBooking" customModuleProvider="target">
+                                <rect key="frame" x="136.66666666666666" y="692" width="116.66666666666666" height="118"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="v">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonCenterClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxQ-AG-S7Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNg-Gx-TNo" customClass="VCRoundButton" customModule="VCYEQuickBooking" customModuleProvider="target">
+                                <rect key="frame" x="263.33333333333331" y="692" width="116.66666666666669" height="118"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonRightClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zT-6G-qAS"/>
                                 </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Btm-7d-ZnI">
-                                <rect key="frame" x="0.0" y="172" width="390" height="638"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="638"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="638" id="1WJ-FV-oDl"/>
+                                </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -50,12 +85,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Btm-7d-ZnI" firstAttribute="centerX" secondItem="11H-XN-k4t" secondAttribute="centerX" id="3sK-e6-fTE"/>
-                            <constraint firstItem="Btm-7d-ZnI" firstAttribute="top" secondItem="11H-XN-k4t" secondAttribute="bottom" constant="8" id="J5v-nN-msX"/>
-                            <constraint firstItem="Btm-7d-ZnI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KW3-aW-a5F"/>
-                            <constraint firstItem="11H-XN-k4t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mad-3n-YQh"/>
-                            <constraint firstItem="11H-XN-k4t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W8z-5l-Hvi"/>
-                            <constraint firstItem="Btm-7d-ZnI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xVC-vW-ewg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mNg-Gx-TNo" secondAttribute="trailing" constant="10" id="3p5-jZ-qOW"/>
+                            <constraint firstItem="ZEI-0h-4Gd" firstAttribute="width" secondItem="M3T-u5-R6u" secondAttribute="width" id="BGq-Op-cI3"/>
+                            <constraint firstItem="ZEI-0h-4Gd" firstAttribute="top" secondItem="M3T-u5-R6u" secondAttribute="top" id="HFh-ix-b5d"/>
+                            <constraint firstItem="Btm-7d-ZnI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IaK-mx-bsZ"/>
+                            <constraint firstItem="M3T-u5-R6u" firstAttribute="top" secondItem="Btm-7d-ZnI" secondAttribute="bottom" constant="10" id="Ojv-eq-4Yr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Btm-7d-ZnI" secondAttribute="trailing" id="Sjo-sq-2Qs"/>
+                            <constraint firstItem="Btm-7d-ZnI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WEi-ep-p2h"/>
+                            <constraint firstItem="mNg-Gx-TNo" firstAttribute="width" secondItem="M3T-u5-R6u" secondAttribute="width" id="XXm-d2-ePN"/>
+                            <constraint firstItem="ZEI-0h-4Gd" firstAttribute="leading" secondItem="M3T-u5-R6u" secondAttribute="trailing" constant="10" id="eBZ-1q-NOS"/>
+                            <constraint firstItem="ZEI-0h-4Gd" firstAttribute="height" secondItem="M3T-u5-R6u" secondAttribute="height" id="eMN-Zf-xXR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M3T-u5-R6u" secondAttribute="bottom" id="jee-Zl-P47"/>
+                            <constraint firstItem="mNg-Gx-TNo" firstAttribute="top" secondItem="ZEI-0h-4Gd" secondAttribute="top" id="s4E-TU-efG"/>
+                            <constraint firstItem="M3T-u5-R6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sxm-sc-xpG"/>
+                            <constraint firstItem="mNg-Gx-TNo" firstAttribute="leading" secondItem="ZEI-0h-4Gd" secondAttribute="trailing" constant="10" id="wkx-m0-XwL"/>
+                            <constraint firstItem="mNg-Gx-TNo" firstAttribute="height" secondItem="M3T-u5-R6u" secondAttribute="height" id="zeq-Rw-NWn"/>
                         </constraints>
                     </view>
                     <connections>
@@ -64,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-313.84615384615381" y="137.91469194312796"/>
+            <point key="canvasLocation" x="-997" y="126"/>
         </scene>
     </scenes>
     <resources>
